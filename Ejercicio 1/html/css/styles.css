@@ -5,6 +5,7 @@
 body {
   margin: 15px 15px 15px;
   font-family: sans-serif;
+  background-image: url(../images/bg-body.png);
 }
 
 a {
@@ -51,7 +52,7 @@ main nav {
 
 .main-nav {
   margin-bottom: 30px;
-  display: none;
+  /* display: none; */
 }
 
 .main-nav .active {
@@ -85,7 +86,7 @@ main nav {
   margin-bottom: 30px;
 }
 
-.products {
+.product {
   margin: 15px;
 }
 
@@ -126,9 +127,79 @@ a.more {
 
 }
 
+/* Breakpoint for Extra small devices */
+@media screen and (max-width: 600px) {
+  body {
+  }
+
+}
+
+/* Breakpoint for Small devices */
 @media screen and (min-width: 600px) {
   body {
-    background-color: green;
   }
+
+  .main-nav ul li a {
+    float: left;
+    display: block;
+  }
+
+  .banner img {
+    display: block;
+    width: 100%;
+    margin-bottom:30px;
+  }
+
+}
+
+/* Breakpoint for Medium devices */
+@media screen and (min-width: 768px) {
+
+  .main-header .toggle-nav {
+    display: none;
+
+  }
+
+  .main-nav {
+    float: left;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .main-nav ul {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .main-nav ul li {
+    display: inline-block;
+    width: 15%;
+    margin-left: 10px;
+  }
+
+  .main-nav ul li a {
+    width: 180px;
+    display: inline-block;
+    margin: 1px 1px 1px 5px;
+  }
+
+  .banner img {
+    display: block;
+    width: 100%;
+    margin-bottom:30px;
+  }
+
+  .vip-products {
+    float: left;
+    width: 100%;
+  }
+
+  .vip-products .product {
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    }
 
 }
